@@ -15,7 +15,7 @@ export async function getDetails(type, id) {
       fetch(url, options),
       fetch(providersUrl, options),
     ]);
-
+    console.log(detailsResponse,providersResponse)
     if (!detailsResponse.ok || !providersResponse.ok) {
       throw Error("something went wrong");
     }

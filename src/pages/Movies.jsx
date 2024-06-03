@@ -49,7 +49,7 @@ const Movies = () => {
           data={data?.results}
           error={error}
           loading={loading}
-          type={"tv"}
+          type={"movie"}
         />
 
         <Pagination
